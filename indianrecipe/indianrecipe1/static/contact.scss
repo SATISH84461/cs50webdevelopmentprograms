@@ -1,0 +1,27 @@
+%contains{
+    margin: 3em;
+    h1{
+    text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+#part1{
+    @extend %contains; 
+    background-color: yellowgreen;
+}
+
+h1,h2,h5,p{
+    text-align: center;
+}
+
+#beforeform{
+    padding: 0px 25%;
+}
+
+form{
+    padding: 50px 20%;
+    text-align: center
+}

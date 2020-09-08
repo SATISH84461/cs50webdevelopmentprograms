@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Satish Restaurant</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'common.css' %}">
+        <link rel="stylesheet" href="{% static 'about.css' %}">
+    </head>
+    <body>
+        <header>
+            <a href="home">Home</a>
+            <a href="menu">Menu</a>
+            <a href="aboutus">About Us</a>
+            <a href="contact">Contact Us</a>
+        </header>
+
+        <div class="row" >
+            <img src="{% static 'images/hero_image.jpg' %}" alt="Indian Food Items" width=100% height=500px>
+            <div class="caption">
+                <h1>About Us</h1>
+            </div>
+        </div>
+        <div class="heading1">
+            <h1>Our Chef</h1>
+            <img src="{% static 'images/aboutusimage1.jpg' %}" alt="" width="20%" height="20%">
+        </div>
+        <ul>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm">
+                    <li>
+                        <h2>Dev Oray</h2>
+                        <p>Lead Chef</p>
+                        <img src="{% static 'images/aboutusChef2.jpg' %}" alt="">
+                    </li>
+                </div>
+                <div class="col-sm">
+                    <li>
+                        <h2>Satish Chauhan</h2>
+                        <p>Owner / Head Chef</p>
+                        <img src="{% static 'images/aboutusChef1.jpg' %}" alt="">
+                    </li>
+                </div>
+                <div class="col-sm">
+                    <li>
+                        <h2>Vishal</h2>
+                        <p>Chef</p>
+                        <img src="{% static 'images/aboutusChef3.jpg' %}" alt="">
+                    </li>
+                </div>
+                </div>
+            </div>
+        </ul>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm" id="content">
+                <h2>A Few Words About Us</h2>
+                <h4>Serving Best Indian Cuisine Since 1984</h4>
+                <p>Satish Restaurant is as varied and 
+                    diverse as the Indian cultures and
+                     languages of this great sub-continent,
+                      its flavors are as exotic as its 
+                      climate and as varied as its people.
+                       We are part of a unique collection
+                        of some of finest Indian restaurants.
+                        We offer enjoyable, memorable dining experiences
+                         – delicious Indian food, exciting interiors &
+                          stylish hospitality. Unusually, we offer genuine
+                           Indian food from the true sources – the
+                            gourmet homes & street stalls across India’s
+                             many regions – prepared by skilled chefs
+                              from those regions. Come for genuine
+                               delicious Indian food.</p>
+              </div>
+              <div class="col-sm">
+                <img src="{% static 'images/aboutusimage6.jpg' %}" alt="">
+              </div>
+            </div>
+          </div>
+        <footer>
+            <div class="alert alert-primary" role="alert">
+                <a href="contact.html">Book a Table</a>
+            </div>
+        </footer>
+    </body>
+</html>

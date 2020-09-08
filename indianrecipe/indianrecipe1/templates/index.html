@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Satish Restaurant</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'common.css' %}">
+        <link rel="stylesheet" href="{% static '.css' %}">
+    </head>
+    <body>
+        <header>
+            <a href="home">Home</a>
+            <a href="menu">Menu</a>
+            <a href="aboutus">About Us</a>
+            <a href="contact">Contact Us</a>
+        </header>
+        
+        <div class="row" >
+            <img src="{% static 'images/hero_image.jpg' %}" alt="Indian Food Items">
+            <div class="caption">    
+                <h3>Welcome</h3>
+                <h1>Satish Restaurant</h1>
+                <h4>WHERE FOOD SPEAKS IN THE PLATE</h4>
+            </div>
+        </div>
+        <section class="section_1">
+            <h1>DIFFERENT STYLES, SAME SIGNATURE</h1>
+            <p>Each of our locations has its own unique style, 
+                designed to blend in harmony with its surroundings. 
+                Whichever location you choose, you can rely on our 
+                signature dining experience, which brings together 
+                exciting flavours and sustainably sourced produce, 
+                carefully-crafted cocktails, impeccable service and 
+                relaxed yet elegant comfort. Our carefully curated 
+                menus change seasonally, ensuring that each plate is 
+                fresh and well-balanced with all palates catered for.</p>
+        </section>
+        <section class="section_2">
+            <div class='part1'>
+            <h1>EXPERIENCE<br>Of Our Customers</h1>
+            <h3>FRESH FOOD, ELEGANT COMFORT</h3>
+            <p>Welcome to Satish Restaurant where we serve fresh,
+                 delicious food prepared with the finest local 
+                 ingredients. Relax, indulge and enjoy our 
+                 mouth-watering dishes within beautiful yet 
+                 comfortable surroundings. Whether you are 
+                 planning a romantic dinner for two, a special
+                  night out for a group of friends or a morning
+                   meet-up with family, we have something special
+                    for every occasion.</p>
+            </div>
+            <div class="part2">
+                <img src="{% static 'images/indexpart1image.jpg' %}" alt="">
+                <img src="{% static 'images/indexpart2image.jpg' %}" alt="">
+            </div>
+        </section>
+        <footer>
+            <div class="alert alert-primary" role="alert">
+                <a href="contact.html">Book a Table</a>
+            </div>
+        </footer>
+    </body>
+</html>

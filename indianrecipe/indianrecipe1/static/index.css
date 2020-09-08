@@ -1,0 +1,45 @@
+.section_1 {
+  margin: 5%;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+a {
+  color: #d4980d;
+}
+
+a:hover {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+.section_2 {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+.section_2 h1 {
+  margin: 0 0 1% 0;
+  padding: 0px 0px 40px 0px;
+}
+
+.section_2 h3 {
+  margin: 0 0 1% 0;
+  padding: 30px 0px;
+}
+
+.section_2 img {
+  width: 40%;
+  height: 720px;
+}
+
+.section_2 {
+  margin: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px auto;
+      grid-template-columns: 300px auto;
+}
+/*# sourceMappingURL=index.css.map */

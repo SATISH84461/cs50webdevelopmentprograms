@@ -1,0 +1,29 @@
+#part1 {
+  margin: 3em;
+}
+
+#part1 h1 {
+  text-align: center;
+}
+
+#part1 p {
+  text-align: center;
+}
+
+#part1 {
+  background-color: yellowgreen;
+}
+
+h1, h2, h5, p {
+  text-align: center;
+}
+
+#beforeform {
+  padding: 0px 25%;
+}
+
+form {
+  padding: 50px 20%;
+  text-align: center;
+}
+/*# sourceMappingURL=contact.css.map */
