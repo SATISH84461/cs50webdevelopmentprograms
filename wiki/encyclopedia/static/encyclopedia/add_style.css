@@ -1,0 +1,27 @@
+textarea {
+    resize: both;
+    width: 90%;
+    height: 70%;
+    margin: 1%;
+}
+
+form {
+    margin: 1%;
+    text-align: center;
+}
+
+.title {
+    margin: 1%;
+}
+
+.desc {
+    margin: 1%;
+}
+
+.button {
+    margin: 2%;
+}
+
+.title input {
+    margin: 1%;
+}

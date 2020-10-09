@@ -1,0 +1,20 @@
+li {
+    font-size: large;
+    margin: 0.5%;
+}
+
+.sidebar a,.sidebar h2, .search {
+    margin: 4%;
+}
+
+p{
+    margin: 0 4%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 1%;
+}
+
+a {
+    color: black;
+}

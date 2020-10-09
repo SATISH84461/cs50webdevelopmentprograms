@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{name}}
+{% endblock %}
+
+{% block body %}
+    <h1>Results</h1><br><br>
+    <ul>
+    {% for i in lis %}
+        <a href="{% url 'gget_page' i %}"><li>{{i}}</li></a>
+    {% endfor %}
+    </ul>
+{% endblock %}
