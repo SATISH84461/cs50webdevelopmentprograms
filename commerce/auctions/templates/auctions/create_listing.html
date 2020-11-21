@@ -1,0 +1,39 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+    <h1 id='my_header'>Create Your Own Product</h1>
+
+    <form action="{% url 'create_listing' %}" method='POST'>
+        {% csrf_token  %}
+        <div class="labels_forms">
+            <h4>{{create_listing.pro_name.label}}<br></h4>
+            {{create_listing.pro_name}}<br>
+            <h4>{{create_listing.pro_price.label}}<br></h4>
+            {{create_listing.pro_price}}<br>
+            <h4>{{create_listing.pro_image.label}}<br></h4>
+            {{create_listing.pro_image}}<br>
+            <h4>{{create_listing.pro_cat_id.label}}<br></h4>
+            {{create_listing.pro_cat_id}}<br>
+            <h4>{{create_listing.pro_description.label}}<br></h4>
+            {{create_listing.pro_description}}<br>
+            <input type="submit" value="Submit" class="btn btn-outline-primary">
+        </div>
+    </form>
+    <style>
+        #my_header{
+            text-align: center;
+            margin: 0 0 5% 0;
+        }
+        form{
+            margin: 1% 10%;
+            text-align: center;
+        }
+        input[type=submit]{
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 30%;
+            text-align: center;
+        }
+    </style>
+{% endblock %}

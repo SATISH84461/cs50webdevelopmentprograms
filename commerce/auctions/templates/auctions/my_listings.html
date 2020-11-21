@@ -1,0 +1,31 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+
+
+<h2 id="index_heading">{{name}}</h2>
+    <div class="d-flex align-content-stretch flex-wrap">
+    {% for i in auction_listing %}
+    <div class="for_hover">
+    <a href="{% url 'pro_bids' i.id %}" style="text-decoration: none;color: black;">
+        <div class="card border-dark mb-3" style="max-width: 18rem;" id="products">
+            <div class="card-header" style="text-align: center;">{{i.cat_id.cat_name}}</div>
+            <div class="card-body text-dark">
+            <img src="{{i.pro_image}}" alt="Image Was There" height="250px" width="250px" style="display: block;margin-left: auto;margin-right: auto;">
+            <h5 class="card-title" style="margin: 5px;">{{i.pro_name}}</h5>
+            <p class="card-text" style="margin: 5px;">Price : Rs. {{i.pro_price}}</p>
+            <p class="card-text"><small class="text-muted">Created {{i.date}}</small></p>
+            </div>
+        </div>
+    </a>
+    </div>
+    {% endfor %}
+    </div>
+    </div>
+    <style>
+        .for_hover:hover{
+            transform: scale(1.01,1.01);
+        }
+    </style>
+
+{% endblock %}

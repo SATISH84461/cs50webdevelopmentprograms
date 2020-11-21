@@ -1,0 +1,26 @@
+{% extends 'auctions/layout.html' %}
+
+{% block body %}
+
+        {% for a in data %}
+        <a href="{% url 'categories_product' name=a.cat_name %}" style="text-decoration: none; color: none;">
+            <h3 class="cat_name">
+                {{a.cat_name}}
+            </h3>
+        </a>
+            {% endfor %}
+    <style>
+        .cat_name{
+            margin: 1% 30%;
+            padding: 1% 10%;
+            text-align: center;
+            border: 2px solid black;
+        }
+        .cat_name:hover{
+            color:white;
+            background-color: chartreuse;
+            font-size: 2em;
+            transform: scale(1.1,1.1);
+        }
+    </style>
+{% endblock %}
